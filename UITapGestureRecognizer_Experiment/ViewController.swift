@@ -10,11 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var funView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(changeColor))
+        gestureRecognizer.numberOfTapsRequired = 3
+        
+        funView.addGestureRecognizer(gestureRecognizer)
     }
-
+    
+    @objc func changeColor() {
+        funView.backgroundColor = UIColor.red
+    }
 
 }
 
