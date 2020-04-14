@@ -36,6 +36,10 @@ class ViewController: UIViewController {
     
     @objc func updateLabel(_ sender: UITapGestureRecognizer) {
         youTapLabel.alpha = 1.0
+        
+        UIView.animate(withDuration: 1.0) {
+            self.youTapLabel.alpha = 0.0
+        }
     }
     
     @objc func changeColor(_ sender: UITapGestureRecognizer) {
