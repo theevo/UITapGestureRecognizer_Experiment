@@ -21,8 +21,12 @@ class ViewController: UIViewController {
         funView.addGestureRecognizer(gestureRecognizer)
     }
     
-    @objc func changeColor() {
+    @objc func changeColor(_ sender: UITapGestureRecognizer) {
         funView.backgroundColor = UIColor.red
+        
+        let tappedView = sender.view!
+        tappedView.layer.borderWidth = 5.0
+        tappedView.layer.borderColor = UIColor.purple.cgColor
     }
 
 }
