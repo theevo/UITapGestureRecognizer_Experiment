@@ -16,21 +16,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kfK-mn-5Xr">
-                                <rect key="frame" x="52" y="298" width="310.5" height="310.5"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="20.5" y="266.5" width="373" height="373"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="kfK-mn-5Xr" secondAttribute="height" multiplier="1:1" id="YB9-Ye-ViK"/>
+                                    <constraint firstAttribute="width" secondItem="kfK-mn-5Xr" secondAttribute="height" multiplier="1:1" id="Mim-ko-wh7"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You tapped?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8TD-i4-dyN">
+                                <rect key="frame" x="116" y="109" width="182.5" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="8TD-i4-dyN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="EVd-8J-btQ"/>
+                            <constraint firstItem="8TD-i4-dyN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="MmJ-cM-cVJ"/>
                             <constraint firstItem="kfK-mn-5Xr" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="dLP-qf-3Mx"/>
                             <constraint firstItem="kfK-mn-5Xr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fxV-MX-DIi"/>
-                            <constraint firstItem="kfK-mn-5Xr" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.75" id="jGX-cV-bbF"/>
+                            <constraint firstItem="kfK-mn-5Xr" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="jGX-cV-bbF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="funView" destination="kfK-mn-5Xr" id="K2t-v5-9qQ"/>
+                        <outlet property="youTapLabel" destination="8TD-i4-dyN" id="Smn-ez-Scr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
