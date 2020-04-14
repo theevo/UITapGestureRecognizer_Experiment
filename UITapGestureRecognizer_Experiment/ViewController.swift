@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     @objc func updateLabel(_ sender: UITapGestureRecognizer) {
         let tapLocation = sender.location(in: funView)
         
-        youTapLabel.text = "\(tapLocation)"
+        youTapLabel.text = "\(tapLocation.prettyPrint())"
         youTapLabel.alpha = 1.0
         
         UIView.animate(withDuration: 2.0) {
